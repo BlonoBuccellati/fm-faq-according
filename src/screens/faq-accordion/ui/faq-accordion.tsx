@@ -11,15 +11,15 @@ import { Card, CardTitle, CardHeader, CardContent } from "@/shared/ui/card";
 
 const FaqTitle = () => {
   return (
-    <CardTitle className="flex space-x-100">
+    <CardTitle className="flex items-center space-x-100">
       <Image
         src={iconStar}
         alt="star"
         width={100}
         height={100}
-        className="w-auto"
+        className="size-[clamp(1.313rem,0.478rem+3.56vw,2.188rem)]"
       />
-      <h1 className="typo-1">FAQs</h1>
+      <h1 className="typo-1 text-[clamp(2rem,0.569rem+6.11vw,3.5rem)]">FAQs</h1>
     </CardTitle>
   );
 };
