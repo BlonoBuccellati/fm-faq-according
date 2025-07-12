@@ -31,9 +31,9 @@ type FaqItemProps = {
 };
 const FaqItem = ({ value, title, content }: FaqItemProps) => {
   return (
-    <AccordionItem value={value} className="group">
+    <AccordionItem value={value}>
       <AccordionTrigger
-        className="[&[data-state=closed]_[data-slot=open-icon]]:block [&[data-state=closed]_[data-slot=open-icon]]:rotate-180 [&[data-state=open]_[data-slot=close-icon]]:block [&[data-state=open]_[data-slot=close-icon]]:rotate-180"
+        className="group [&[data-state=closed]_[data-slot=open-icon]]:block [&[data-state=closed]_[data-slot=open-icon]]:rotate-180 [&[data-state=open]_[data-slot=close-icon]]:block [&[data-state=open]_[data-slot=close-icon]]:rotate-180"
         icon={
           <div className="size-[25px] flex-shrink-0">
             <Image
