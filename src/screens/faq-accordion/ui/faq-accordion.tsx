@@ -15,8 +15,6 @@ const FaqTitle = () => {
       <Image
         src={iconStar}
         alt="star"
-        width={100}
-        height={100}
         className="size-[clamp(1.313rem,0.478rem+3.56vw,2.188rem)]"
       />
       <h1 className="typo-1 text-[clamp(2rem,0.569rem+6.11vw,3.5rem)]">FAQs</h1>
