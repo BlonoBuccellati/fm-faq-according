@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "./shadcn.css";
+@import "./custom-props.css";
+@import "./utilities/custom-token.css";
+@import "./utilities/typography-token.css";
+
+body {
+  @apply bg-purple-100 text-purple-950;
+  font-family: var(--font-work-sans), Arial, Helvetica, sans-serif;
+}

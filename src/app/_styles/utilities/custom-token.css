@@ -1,0 +1,70 @@
+/* フォント */
+@theme inline {
+  --font-work-sans: var(--font-work-sans);
+}
+
+/* カラー */
+@theme {
+  --color-white: hsl(0, 100%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+
+  --color-purple-*: initial;
+  --color-purple-100: hsl(275, 100%, 97%);
+  --color-purple-600: hsl(292, 16%, 49%);
+  --color-purple-950: hsl(292, 42%, 14%);
+
+  --color-violet-*: initial;
+  --color-violet-600: hsl(281, 83%, 54%);
+}
+
+/* spacing */
+@theme {
+  --spacing-*: initial;
+  --spacing-0: 0;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.5rem;
+  --spacing-800: 4rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1100: 5.5rem;
+  --spacing-1200: 6rem;
+  --spacing-1300: 6.5rem;
+  --spacing-1400: 7rem;
+  --spacing-1500: 7.5rem;
+  --spacing-1600: 8rem;
+  --spacing-1700: 8.5rem;
+  --spacing-1800: 9rem;
+  --spacing-1900: 9.5rem;
+  --spacing-2000: 10rem;
+  --spacing-2100: 10.5rem;
+  --spacing-2200: 11rem;
+  --spacing-2300: 11.5rem;
+
+  --spacing-sm-100-to-md-200: clamp(0.5rem, 0.023rem + 2.04vw, 1rem);
+  --spacing-sm-200-to-md-300: clamp(1rem, 0.523rem + 2.04vw, 1.5rem);
+  --spacing-sm-200-to-md-400: clamp(1rem, 0.046rem + 4.07vw, 2rem);
+  --spacing-sm-200-to-md-700: clamp(1rem, -1.385rem + 10.18vw, 3.5rem);
+  --spacing-sm-300-to-md-400: clamp(1.5rem, 1.023rem + 2.04vw, 2rem);
+  --spacing-sm-400-to-md-500: clamp(2rem, 1.523rem + 2.04vw, 2.5rem);
+  --spacing-sm-400-to-md-600: clamp(2rem, 1.046rem + 4.07vw, 3rem);
+  --spacing-sm-500-to-md-700: clamp(2.5rem, 1.546rem + 4.07vw, 3.5rem);
+  --spacing-sm-600-to-md-800: clamp(3rem, 2.046rem + 4.07vw, 4rem);
+  --spacing-sm-500-to-md-800: clamp(2.5rem, 1.069rem + 6.11vw, 4rem);
+  --spacing-md-200-to-lg-300: clamp(1rem, 0.429rem + 1.19vw, 1.5rem);
+}
+
+@theme {
+  --breakpoint-*: initial;
+  /* @mediaクエリ内ではvar()は許可されないため値を複製 */
+  /* メディアクエリでは、値に応じて、中のスタイルを適用する。
+  つまり、メディアクエリが先に判断していないと、スタイルを適用できないため、実行時に解決されるCSS変数は使うことができない。 */
+  /* 参考URL：https://github.com/tailwindlabs/tailwindcss/discussions/15113 */
+  --breakpoint-mobile: 375px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1440px;
+}

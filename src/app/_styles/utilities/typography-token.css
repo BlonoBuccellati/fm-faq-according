@@ -1,0 +1,25 @@
+@utility typo-1 {
+  font-family: var(--font-work-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 56px;
+  line-height: 66px;
+  letter-spacing: 0;
+}
+
+@utility typo-2 {
+  font-family: var(--font-work-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  /* mobile -> tablet */
+  line-height: 21px;
+  letter-spacing: 0;
+}
+
+@utility typo-3 {
+  font-family: var(--font-work-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  /* mobile -> tablet */
+  line-height: 24px;
+  letter-spacing: 0;
+}
