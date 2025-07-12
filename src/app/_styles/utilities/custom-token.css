@@ -50,6 +50,7 @@
   --spacing-sm-200-to-md-400: clamp(1rem, 0.046rem + 4.07vw, 2rem);
   --spacing-sm-200-to-md-700: clamp(1rem, -1.385rem + 10.18vw, 3.5rem);
   --spacing-sm-300-to-md-400: clamp(1.5rem, 1.023rem + 2.04vw, 2rem);
+  --spacing-sm-300-to-md-500: clamp(1.5rem, 0.546rem + 4.07vw, 2.5rem);
   --spacing-sm-400-to-md-500: clamp(2rem, 1.523rem + 2.04vw, 2.5rem);
   --spacing-sm-400-to-md-600: clamp(2rem, 1.046rem + 4.07vw, 3rem);
   --spacing-sm-500-to-md-700: clamp(2.5rem, 1.546rem + 4.07vw, 3.5rem);
