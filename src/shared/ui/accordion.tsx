@@ -35,11 +35,11 @@ function AccordionTrigger({
 }: React.ComponentProps<typeof AccordionPrimitive.Trigger> &
   AccordionTriggerType) {
   return (
-    <AccordionPrimitive.Header className="divide-y">
+    <AccordionPrimitive.Header className="group divide-y">
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "flex w-full items-center justify-between space-x-300 py-300 text-left transition-all outline-none hover:cursor-pointer focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50",
+          "flex w-full items-center justify-between space-x-300 py-300 text-left transition-all outline-none hover:cursor-pointer disabled:opacity-50",
           className,
         )}
         {...props}
@@ -59,7 +59,7 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
       {...props}
     >
       <div className={cn(className)}>{children}</div>

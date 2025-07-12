@@ -34,7 +34,7 @@ const FaqItem = ({ value, title, content, className }: FaqItemProps) => {
     <AccordionItem value={value}>
       <AccordionTrigger
         className={cn(
-          "group [&[data-state=closed]_[data-slot=open-icon]]:block [&[data-state=closed]_[data-slot=open-icon]]:rotate-180 [&[data-state=open]_[data-slot=close-icon]]:block [&[data-state=open]_[data-slot=close-icon]]:rotate-180",
+          "[&[data-state=closed]_[data-slot=open-icon]]:block [&[data-state=closed]_[data-slot=open-icon]]:rotate-180 [&[data-state=open]_[data-slot=close-icon]]:block [&[data-state=open]_[data-slot=close-icon]]:rotate-180",
           className,
         )}
         icon={
@@ -79,9 +79,7 @@ const FaqAccordion = () => {
             <FaqItem
               value="faq-1"
               title="What is Frontend Mentor, and how will it help me?"
-              content="Our flagship product combines cutting-edge technology with sleek
-          design. Built with premium materials, it offers unparalleled
-          performance and reliability."
+              content="Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It’s suitable for all levels and ideal for portfolio building."
               className="pt-0"
             />
             <FaqItem
@@ -101,7 +99,7 @@ const FaqAccordion = () => {
               title="How can I get help if I'm stuck on a challenge?"
               content="The best place to get help is inside Frontend Mentor's Discord community. There's a help
   channel where you can ask questions and seek support from other community members."
-              className="pb-0"
+              className="data-[state=closed]:pb-0"
             />
           </Accordion>
         </CardContent>
