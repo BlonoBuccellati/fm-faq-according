@@ -11,6 +11,7 @@ const workSans = Work_Sans({
 export const metadata: Metadata = {
   title: "Frontend Mentor | FAQ According",
   description: "FAQ According",
+  icons: "favicon-32x32.png",
 };
 
 export default function RootLayout({
