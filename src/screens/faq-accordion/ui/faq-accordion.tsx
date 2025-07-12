@@ -64,7 +64,7 @@ const FaqItem = ({ value, title, content }: FaqItemProps) => {
   );
 };
 
-const FaqAccording = () => {
+const FaqAccordion = () => {
   return (
     <main className="flex min-h-screen items-center justify-center">
       <Card className="space-y-sm-300-to-md-400 mx-auto w-[clamp(20.438rem,4.156rem+69.47vw,37.5rem)] p-300">
@@ -105,4 +105,4 @@ const FaqAccording = () => {
   );
 };
 
-export default FaqAccording;
+export default FaqAccordion;

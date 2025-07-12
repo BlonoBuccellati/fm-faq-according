@@ -1,5 +1,5 @@
-import FaqAccording from "@/screens/faq-according/ui/faq-according";
+import FaqAccordion from "@/screens/faq-accordion/ui/faq-accordion";
 
 export default function Home() {
-  return <FaqAccording />;
+  return <FaqAccordion />;
 }
