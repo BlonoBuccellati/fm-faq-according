@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { iconMinus, iconPlus, iconStar } from "@/shared/assets";
+import { cn } from "@/shared/lib/utils";
 import {
   Accordion,
   AccordionContent,
@@ -11,7 +12,7 @@ import { Card, CardTitle, CardHeader, CardContent } from "@/shared/ui/card";
 
 const FaqTitle = () => {
   return (
-    <CardTitle className="flex items-center space-x-100">
+    <CardTitle className="flex items-center space-x-300">
       <Image
         src={iconStar}
         alt="star"
@@ -26,12 +27,16 @@ type FaqItemProps = {
   value: string;
   title: string;
   content: string;
+  className?: string;
 };
-const FaqItem = ({ value, title, content }: FaqItemProps) => {
+const FaqItem = ({ value, title, content, className }: FaqItemProps) => {
   return (
     <AccordionItem value={value}>
       <AccordionTrigger
-        className="group [&[data-state=closed]_[data-slot=open-icon]]:block [&[data-state=closed]_[data-slot=open-icon]]:rotate-180 [&[data-state=open]_[data-slot=close-icon]]:block [&[data-state=open]_[data-slot=close-icon]]:rotate-180"
+        className={cn(
+          "group [&[data-state=closed]_[data-slot=open-icon]]:block [&[data-state=closed]_[data-slot=open-icon]]:rotate-180 [&[data-state=open]_[data-slot=close-icon]]:block [&[data-state=open]_[data-slot=close-icon]]:rotate-180",
+          className,
+        )}
         icon={
           <div className="size-[25px] flex-shrink-0">
             <Image
@@ -77,6 +82,7 @@ const FaqAccordion = () => {
               content="Our flagship product combines cutting-edge technology with sleek
           design. Built with premium materials, it offers unparalleled
           performance and reliability."
+              className="pt-0"
             />
             <FaqItem
               value="faq-2"
@@ -95,6 +101,7 @@ const FaqAccordion = () => {
               title="How can I get help if I'm stuck on a challenge?"
               content="The best place to get help is inside Frontend Mentor's Discord community. There's a help
   channel where you can ask questions and seek support from other community members."
+              className="pb-0"
             />
           </Accordion>
         </CardContent>
